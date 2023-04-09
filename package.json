@@ -1,0 +1,24 @@
+{
+  "name": "vuepress2-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-beta.61",
+    "@vuepress/plugin-active-header-links": "2.0.0-beta.61",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6",
+    "vuepress": "2.0.0-beta.61",
+    "vuepress-plugin-auto-sidebar-navbar": "^1.0.9",
+    "vuepress-plugin-copy-code2": "2.0.0-beta.201",
+    "vuepress-plugin-reading-time2": "2.0.0-beta.201",
+    "vuepress-plugin-seo2": "2.0.0-beta.201"
+  }
+}
