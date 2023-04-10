@@ -18,7 +18,9 @@ const projects = frontmatter.value.projects;
 const showAnimation = ref(false)
 
 const active = () => {
-  showAnimation.value = true
+  if (!showAnimation.value) {
+    showAnimation.value = true
+  }
 }
 
 defineExpose({ active })

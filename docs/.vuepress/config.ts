@@ -1,8 +1,9 @@
 import { defineUserConfig, defaultTheme } from 'vuepress'
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { readingTimePlugin } from "vuepress-plugin-reading-time2";
-import { seoPlugin } from "vuepress-plugin-seo2";
 import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
+// import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
+import sidebar from './locale/sidebar';
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -16,11 +17,7 @@ export default defineUserConfig({
         link: '/',
       },
     ],
-    sidebar: {
-      '/react/': [
-        '08.t.md',
-      ],
-    }
+    sidebar
   }),
   plugins: [
     copyCodePlugin({
@@ -32,6 +29,10 @@ export default defineUserConfig({
     readingTimePlugin({
       // your options
     }),
+    // smoothScrollPlugin(),
+    // smoothScrollPlugin({
+    //   delay: 1000
+    // }),
     // lightgalleryPlugin({
     //   // your options
     // }),

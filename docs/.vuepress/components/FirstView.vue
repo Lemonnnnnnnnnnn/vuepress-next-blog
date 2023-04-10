@@ -12,20 +12,11 @@ import { useRoute, useRouter } from "vue-router";
 const router = useRouter()
 
 const moveDown = () => {
-    // 获取屏幕高度
-    // const screenHeight = window.innerHeight;
-
-    // window.scrollTo({
-    //     top: screenHeight,
-    //     behavior: "smooth",
-    // });
-    
     router.push('#file-explorer')
     emit(activeFileExplorer)
 }
 
 const emit = defineEmits([activeFileExplorer]);
-
 
 </script>
 
