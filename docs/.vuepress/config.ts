@@ -1,9 +1,6 @@
 import { defineUserConfig, defaultTheme } from 'vuepress'
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { readingTimePlugin } from "vuepress-plugin-reading-time2";
-import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
-// import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
-// import sidebar from './locale/sidebar';
 import { getSideBar } from './utils/getSideBar'
 
 export default defineUserConfig({
@@ -23,9 +20,6 @@ export default defineUserConfig({
   plugins: [
     copyCodePlugin({
       // 插件选项
-    }),
-    activeHeaderLinksPlugin({
-      // options
     }),
     readingTimePlugin({
       // your options

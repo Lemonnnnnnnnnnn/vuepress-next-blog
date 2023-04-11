@@ -1,19 +1,10 @@
----
-title : 'react'
----
-
-## react16和react18
-
-[react16和react18](/react/01.进阶/)
-
-## SWR
-
-[SWR](/react/02.SWR/)
-
-## Redux
-
-[SWR](/react/03.Redux/)
-
-## recoil
-
-[SWR](/react/04.recoil/)
+## react16-react18 
+[react16-react18](/react/react16-react18/) 
+## README.md 
+[README.md](/react/README.md/) 
+## recoil 
+[recoil](/react/recoil/) 
+## Redux 
+[Redux](/react/Redux/) 
+## SWR 
+[SWR](/react/SWR/) 

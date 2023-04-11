@@ -15,14 +15,14 @@ const source_dir_pure = source_dir.slice(0, source_dir.length - 1); // remove la
 function fn(dir: string): void {
     // let results: string[] = [];
     const list = fs.readdirSync(dir);
-    
+
     // 判断是否有子文件夹
     let hasSubDir = false;
     const _list = list.filter((file) => file.indexOf('.vuepress') === -1)
 
     for (let file of _list) {
         file = dir + systemSep + file;
-        
+
         const stat = fs.statSync(file);
         if (stat && stat.isDirectory()) {
             hasSubDir = true
@@ -30,18 +30,19 @@ function fn(dir: string): void {
     }
 
     if (hasSubDir) {
-        console.log(_list);
-        
         const readmePath = dir + systemSep + 'README.md';
         // 获取source_dir后面的路径
-        const file_path = dir.slice(source_dir_pure.length);
+        const file_path = dir.slice(source_dir.length);
         let readmeContent = ''
 
         // 遍历子文件夹
         for (let file of _list) {
-            readmeContent += `## ${file} \
-            [${file}](${file_path}/${file}) \n`;
-            fn(dir + systemSep + file)
+            readmeContent += `## ${file} \n[${file}](/${file_path}/${file}/) \n`;
+
+            const stat = fs.statSync(dir + systemSep + file);
+            if (stat && stat.isDirectory()) {
+                fn(dir + systemSep + file)
+            }
         }
 
         fs.writeFileSync(readmePath, readmeContent);
