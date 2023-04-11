@@ -3,7 +3,8 @@ import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { readingTimePlugin } from "vuepress-plugin-reading-time2";
 import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
 // import { smoothScrollPlugin } from '@vuepress-denaro/vuepress-plugin-smooth-scroll'
-import sidebar from './locale/sidebar';
+// import sidebar from './locale/sidebar';
+import { getSideBar } from './utils/getSideBar'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -17,7 +18,7 @@ export default defineUserConfig({
         link: '/',
       },
     ],
-    sidebar
+    sidebar : getSideBar()
   }),
   plugins: [
     copyCodePlugin({

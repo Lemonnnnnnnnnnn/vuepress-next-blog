@@ -44,7 +44,7 @@ defineExpose({ active })
 .fileList {
   display: flex;
   padding: 20px;
-  /* justify-content: space-around;     */
+  flex-wrap: wrap;
 }
 
 .fade-in {

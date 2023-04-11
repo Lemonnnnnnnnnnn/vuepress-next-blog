@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/node": "^7.20.7",
     "@types/node": "^18.15.11",
     "@vuepress/client": "2.0.0-beta.61",
     "@vuepress/plugin-active-header-links": "2.0.0-beta.61",

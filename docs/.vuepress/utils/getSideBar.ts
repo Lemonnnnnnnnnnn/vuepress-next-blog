@@ -5,7 +5,7 @@ import { getFiles } from './getFiles';
 const source_dir = path.join(__dirname, '../../');
 const source_dir_pure = source_dir.slice(0, source_dir.length - 1); // remove last slash
 
-function getSideBar() {
+export function getSideBar() {
     const sidebar: any = {};
     const files = getFiles(source_dir_pure);
     for (let file of files) {
@@ -19,11 +19,11 @@ function getSideBar() {
 
         if (sidebar[file_path_pure] === undefined) {
             sidebar[file_path_pure] = [];
+            sidebar[file_path_pure].push(file_name);
         } else {
             sidebar[file_path_pure].push(file_name);
         }
     }
-
     // 对sidebar的value根据数字排序
     for (let key in sidebar) {
         sidebar[key].sort((a: string, b: string) => {
@@ -33,29 +33,28 @@ function getSideBar() {
         });
     }
 
-
     return sidebar
 }
 
-export function generateSidebar() {
-    const sideBar = getSideBar();
-    console.log(sideBar);
-    
+// getSideBar()
 
-    // 将sideBar 写入/docs/.vuepress/locale/sidebar.ts
-    const sidebar_file = path.join(__dirname, '../locale/sidebar.ts');
-    let sidebar_content = 'export default {\n';
-    for (let key in sideBar) {
-        sidebar_content += `    '${key}': [\n`;
-        for (let file of sideBar[key]) {
-            sidebar_content += `        '${file}',\n`;
-        }
-        sidebar_content += `    ],\n`;
-    }
-    sidebar_content += '}\n';
-    fs.writeFileSync(sidebar_file, sidebar_content);
-}
+// export function generateSidebar() {
+//     const sideBar = getSideBar();
 
-generateSidebar()
+//     // 将sideBar 写入/docs/.vuepress/locale/sidebar.ts
+//     const sidebar_file = path.join(__dirname, '../locale/sidebar.ts');
+//     let sidebar_content = 'export default {\n';
+//     for (let key in sideBar) {
+//         sidebar_content += `    '${key}': [\n`;
+//         for (let file of sideBar[key]) {
+//             sidebar_content += `        '${file}',\n`;
+//         }
+//         sidebar_content += `    ],\n`;
+//     }
+//     sidebar_content += '}\n';
+//     fs.writeFileSync(sidebar_file, sidebar_content);
+// }
+
+// generateSidebar()
 
 

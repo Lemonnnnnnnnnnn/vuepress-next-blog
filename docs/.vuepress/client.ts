@@ -9,8 +9,8 @@ export default defineClientConfig({
     layouts: {
         Home,
     },
-    enhance({ app, router }) {
-
+    enhance({ app, router  }) {
+        
     },
     setup() {
     }

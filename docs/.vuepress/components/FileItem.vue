@@ -24,10 +24,11 @@ const { name, icon, link } = defineProps<IProps>()
 
 <style  scoped>
 .dir {
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 140px;
     padding: 10px;
     display: flex;
+    margin : 30px;
     align-items: center;
     position: relative;
     justify-content: center;
@@ -43,15 +44,14 @@ const { name, icon, link } = defineProps<IProps>()
 }
 
 img {
-    width: 50px;
-    height: 50px;
+    width: 120px;
+    height: 120px;
 }
-
-
 
 .dec {
     user-select:none;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 
