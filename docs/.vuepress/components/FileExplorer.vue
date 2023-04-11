@@ -1,7 +1,8 @@
 <template>
   <div id="file-explorer" class="wrapper" :class="showAnimation ? 'wrapper bgimg fade-in' : ''">
     <div v-if="showAnimation" class="fileList">
-      <FileItem v-for="(item, index) in projects" :name="item.name" :icon="item.icon" :key="index" :link="asset_prefix + item.link" />
+      <FileItem v-for="(item, index) in projects" :name="item.name" :icon="asset_prefix + item.icon" :key="index"
+        :link="item.link" />
     </div>
 
   </div>
@@ -9,12 +10,12 @@
 
 <script setup lang="ts">
 import FileItem from './FileItem.vue';
-import { usePageFrontmatter  , useSiteData} from "@vuepress/client";
+import { usePageFrontmatter, useSiteData } from "@vuepress/client";
 import { ref } from 'vue';
 
 const frontmatter = usePageFrontmatter();
 const siteData = useSiteData()
-const asset_prefix = siteData.value.base 
+const asset_prefix = siteData.value.base
 
 const projects = frontmatter.value.projects;
 
