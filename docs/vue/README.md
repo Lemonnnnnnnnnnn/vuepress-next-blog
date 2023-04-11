@@ -1,7 +1,5 @@
-## 00.基本使用 
-[00.基本使用](/vue/00.基本使用/) 
-## 01.Vue核心概念 
-[01.Vue核心概念](/vue/01.Vue核心概念/) 
+## Base 
+[Base](/vue/base/) 
 ## 02.Vue3 
 [02.Vue3](/vue/02.Vue3/) 
 ## 03.Vue-Router 
