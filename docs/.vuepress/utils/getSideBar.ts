@@ -36,7 +36,7 @@ export function getSideBar() {
     return sidebar
 }
 
-console.log(getSideBar())
+// console.log(getSideBar())
 
 // export function generateSidebar() {
 //     const sideBar = getSideBar();
