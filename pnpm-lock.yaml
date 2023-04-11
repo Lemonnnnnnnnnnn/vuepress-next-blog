@@ -5,7 +5,6 @@ specifiers:
   '@babel/node': ^7.20.7
   '@types/node': ^18.15.11
   '@vuepress/client': 2.0.0-beta.61
-  '@vuepress/plugin-active-header-links': 2.0.0-beta.61
   ts-node: ^10.9.1
   typescript: ^5.0.4
   vue: ^3.2.47
@@ -21,7 +20,6 @@ devDependencies:
   '@babel/node': registry.npmmirror.com/@babel/node/7.20.7_@babel+core@7.21.4
   '@types/node': registry.npmmirror.com/@types/node/18.15.11
   '@vuepress/client': registry.npmmirror.com/@vuepress/client/2.0.0-beta.61
-  '@vuepress/plugin-active-header-links': registry.npmmirror.com/@vuepress/plugin-active-header-links/2.0.0-beta.61
   ts-node: registry.npmmirror.com/ts-node/10.9.1_bhanhq442dy43ncydsavgi4jfi
   typescript: registry.npmmirror.com/typescript/5.0.4
   vue: registry.npmmirror.com/vue/3.2.47
