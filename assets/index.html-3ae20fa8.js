@@ -1,0 +1,1 @@
+import{_ as t,p as c,q as r,R as e,t as s}from"./framework-c8e009f3.js";const a={},o=e("h1",{id:"closure",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#closure","aria-hidden":"true"},"#"),s(" closure")],-1),n=[o];function _(d,i){return c(),r("div",null,n)}const h=t(a,[["render",_],["__file","index.html.vue"]]);export{h as default};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-22cc015d","path":"/vue/Vue-Router/","title":"Vue-Router","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681216776000,"contributors":[{"name":"soul","email":"104170577@qq.com","commits":1}]},"filePathRelative":"vue/Vue-Router/README.md","readingTime":{"minutes":0.01,"words":2}}');export{e as data};

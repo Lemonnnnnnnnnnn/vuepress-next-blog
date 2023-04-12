@@ -1,0 +1,1 @@
+import{_ as a,p as t,q as n,R as e,t as i}from"./framework-c8e009f3.js";const c={},r=e("h1",{id:"pinia",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#pinia","aria-hidden":"true"},"#"),i(" pinia")],-1),s=[r];function o(_,d){return t(),n("div",null,s)}const l=a(c,[["render",o],["__file","index.html.vue"]]);export{l as default};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-9c562c6c","path":"/react/SWR/","title":"SWR","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681196984000,"contributors":[{"name":"linyuchen","email":"1041707577@qq.com","commits":2}]},"filePathRelative":"react/SWR/README.md","readingTime":{"minutes":0,"words":1}}');export{e as data};

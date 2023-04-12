@@ -1,0 +1,1 @@
+import{_ as t,p as _,q as c,R as e,t as n}from"./framework-c8e009f3.js";const o={},s=e("ol",null,[e("li",null,[n("启动命令 "),e("code",null,"service nginx start")])],-1),l=[s];function r(a,i){return _(),c("div",null,l)}const u=t(o,[["render",r],["__file","30.常用命令.html.vue"]]);export{u as default};

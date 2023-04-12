@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as c,R as e,t as n}from"./framework-c8e009f3.js";const r={},s=e("h1",{id:"vue基本使用及底层原理",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#vue基本使用及底层原理","aria-hidden":"true"},"#"),n(" Vue基本使用及底层原理")],-1),o=[s];function _(d,i){return a(),c("div",null,o)}const l=t(r,[["render",_],["__file","index.html.vue"]]);export{l as default};

@@ -1,0 +1,1 @@
+import{_,p as c,q as o,R as e,t}from"./framework-c8e009f3.js";const n={},a=e("p",null,[t("清除缓存 "),e("code",null,"git rm -r --cached"),t(" . 查看所有分支： "),e("code",null,"git branch -a")],-1),r=[a];function s(l,d){return c(),o("div",null,r)}const u=_(n,[["render",s],["__file","01.常用指令.html.vue"]]);export{u as default};

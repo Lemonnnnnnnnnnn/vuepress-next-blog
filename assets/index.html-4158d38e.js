@@ -1,0 +1,1 @@
+import{_ as t,p as c,q as r,R as e,t as a}from"./framework-c8e009f3.js";const o={},n=e("h1",{id:"recoil",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#recoil","aria-hidden":"true"},"#"),a(" recoil")],-1),s=[n];function i(_,d){return c(),r("div",null,s)}const h=t(o,[["render",i],["__file","index.html.vue"]]);export{h as default};

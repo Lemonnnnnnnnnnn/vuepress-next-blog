@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0484fadc","path":"/vue/base/","title":"Vue基本使用及底层原理","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681216300000,"contributors":[{"name":"soul","email":"104170577@qq.com","commits":1}]},"filePathRelative":"vue/base/README.md","readingTime":{"minutes":0.03,"words":10}}');export{e as data};

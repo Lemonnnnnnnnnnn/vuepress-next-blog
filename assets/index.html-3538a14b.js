@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-03e4bda0","path":"/vue/Vue3/","title":"Vue3的使用方法","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681216776000,"contributors":[{"name":"soul","email":"104170577@qq.com","commits":1}]},"filePathRelative":"vue/Vue3/README.md","readingTime":{"minutes":0.02,"words":6}}');export{e as data};

@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as c,R as e,t as n}from"./framework-c8e009f3.js";const r={},s=e("h1",{id:"vue3的使用方法",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#vue3的使用方法","aria-hidden":"true"},"#"),n(" Vue3的使用方法")],-1),o=[s];function _(d,i){return a(),c("div",null,o)}const l=t(r,[["render",_],["__file","index.html.vue"]]);export{l as default};

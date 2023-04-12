@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as c,R as e,t as r}from"./framework-c8e009f3.js";const n={},s=e("h1",{id:"react16-react18",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#react16-react18","aria-hidden":"true"},"#"),r(" react16-react18")],-1),o=[s];function _(d,i){return a(),c("div",null,o)}const l=t(n,[["render",_],["__file","index.html.vue"]]);export{l as default};

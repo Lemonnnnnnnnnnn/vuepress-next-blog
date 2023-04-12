@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-b7267678","path":"/vue/pinia/","title":"pinia","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681216776000,"contributors":[{"name":"soul","email":"104170577@qq.com","commits":1}]},"filePathRelative":"vue/pinia/README.md","readingTime":{"minutes":0,"words":1}}');export{e as data};

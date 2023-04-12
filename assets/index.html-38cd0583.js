@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as r,R as e,t as s}from"./framework-c8e009f3.js";const c={},n=e("h1",{id:"swr",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#swr","aria-hidden":"true"},"#"),s(" SWR")],-1),o=[n];function _(d,i){return a(),r("div",null,o)}const l=t(c,[["render",_],["__file","index.html.vue"]]);export{l as default};
