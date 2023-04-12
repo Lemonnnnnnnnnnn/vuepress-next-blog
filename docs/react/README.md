@@ -1,10 +1,10 @@
 ## react16-react18 
-[react16-react18](/react/react16-react18/) 
+[react16-react18](react16-react18/) 
 ## README.md 
-[README.md](/react/README.md/) 
+[README.md](README.md/) 
 ## recoil 
-[recoil](/react/recoil/) 
+[recoil](recoil/) 
 ## Redux 
-[Redux](/react/Redux/) 
+[Redux](Redux/) 
 ## SWR 
-[SWR](/react/SWR/) 
+[SWR](SWR/) 

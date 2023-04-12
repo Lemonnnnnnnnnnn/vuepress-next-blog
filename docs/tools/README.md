@@ -1,20 +1,20 @@
 ## git 
-[git](/tools/git/) 
+[git](git/) 
 ## docker 
-[docker](/tools/docker/) 
+[docker](docker/) 
 ## ffmpeg.md 
-[ffmpeg.md](/tools/ffmpeg.md/) 
+[ffmpeg.md](ffmpeg.md/) 
 ## Listary.md 
-[Listary.md](/tools/Listary.md/) 
+[Listary.md](Listary.md/) 
 ## AHK.md 
-[AHK.md](/tools/AHK.md/) 
+[AHK.md](AHK.md/) 
 ## notion.md 
-[notion.md](/tools/notion.md/) 
+[notion.md](notion.md/) 
 ## vscode.md 
-[vscode.md](/tools/vscode.md/) 
+[vscode.md](vscode.md/) 
 ## Intellij-Idea.md 
-[Intellij-Idea.md](/tools/Intellij-Idea.md/) 
+[Intellij-Idea.md](Intellij-Idea.md/) 
 ## Chrome.md 
-[Chrome.md](/tools/Chrome.md/) 
+[Chrome.md](Chrome.md/) 
 ## README.md 
-[README.md](/tools/README.md/) 
+[README.md](README.md/) 

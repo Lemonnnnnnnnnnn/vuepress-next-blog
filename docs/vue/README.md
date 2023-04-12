@@ -1,14 +1,14 @@
 ## Base 
-[Base](/vue/base/) 
+[Base](base/) 
 ## Vue3 
-[Vue3](/vue/Vue3/) 
+[Vue3](Vue3/) 
 ## Vue-Router 
-[Vue-Router](/vue/Vue-Router/) 
+[Vue-Router](Vue-Router/) 
 ## Nuxt 
-[Nuxt](/vue/Nuxt/) 
+[Nuxt](Nuxt/) 
 ## vuex 
-[vuex](/vue/vuex/) 
+[vuex](vuex/) 
 ## pinia 
-[pinia](/vue/pinia/) 
+[pinia](pinia/) 
 ## README.md 
-[README.md](/vue/README.md/) 
+[README.md](README.md/) 
