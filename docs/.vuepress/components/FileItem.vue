@@ -25,7 +25,7 @@ const onClick = () => {
   onLeave()
   setTimeout(() => {
     router.push(link)
-  }, 1000)
+  }, 700)
 }
 
 

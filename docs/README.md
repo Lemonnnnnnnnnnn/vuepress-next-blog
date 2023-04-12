@@ -1,5 +1,6 @@
 ---
 layout: 'Home'
+avatar: 'dog_bg_256.png'
 projects:
   - name: Vue
     link: /vue/

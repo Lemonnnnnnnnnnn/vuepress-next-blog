@@ -10,15 +10,19 @@
 
 <script setup lang="ts">
 import FileItem from './FileItem.vue';
-import { usePageFrontmatter, useSiteData } from "@vuepress/client";
 import { ref, computed } from 'vue';
+import { SiteData } from '@vuepress/client';
 
 
-const frontmatter = usePageFrontmatter();
-const siteData = useSiteData()
-const asset_prefix = siteData.value.base
+interface IProps {
+  siteData: SiteData,
+  frontmatter: any
+}
 
-const projects = frontmatter.value.projects;
+const { siteData, frontmatter } = defineProps<IProps>()
+
+const asset_prefix = siteData.base
+const projects = frontmatter.projects;
 
 const viewIn = ref<boolean | null>(null)
 
@@ -53,11 +57,10 @@ const onLeave = () => {
 .wrapper {
   height: 100vh;
   width: 100%;
-  /* overflow: hidden; */
 }
 
 .bgimg {
-  background-image: url('/w11-h.jpg');
+  background-image: url('/w11-h-60.jpg');
   background-size: cover;
 }
 
