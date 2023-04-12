@@ -11,11 +11,11 @@ projects:
     icon: /react-js-icon.svg
 
   - name: Rust
-    link: /rust/
+    link: /rust/10.基本使用.html/
     icon: /rustacean-orig-noshadow.svg
 
   - name: Java
-    link: /java/
+    link: /java/10.起步.html/
     icon: /java-programming-language-icon.svg
 
   - name: JavaScript

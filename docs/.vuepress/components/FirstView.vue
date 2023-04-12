@@ -35,6 +35,7 @@ const description = siteData.description
 const avatar = frontmatter.avatar;
 
 const router = useRouter()
+const emit = defineEmits([activeFileExplorer]);
 
 const showMe = () => {
     router.push('#file-explorer')
@@ -44,7 +45,6 @@ const showMe = () => {
     }, 1000)
 }
 
-const emit = defineEmits([activeFileExplorer]);
 
 </script>
 
@@ -102,6 +102,7 @@ const emit = defineEmits([activeFileExplorer]);
         // color: white;
         text-align: center;
         margin-top: 10px;
+        font-style: italic;
     }
 }
 

@@ -10,9 +10,9 @@ console.log("生成完毕！")
 export default defineUserConfig({
   lang: 'zh-CN',
   base : '/vuepress-next-blog/',
-  title: 'Linyc的小站',
+  title: '𝓛𝓲𝓷𝔂𝓬的小站',
   description: '输出是最好的输入，记录每一刻',
-  head: [['link', { rel: 'icon', href: '/dog_logo_32.ico' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   theme: defaultTheme({
     // 默认主题配置
     navbar: [
