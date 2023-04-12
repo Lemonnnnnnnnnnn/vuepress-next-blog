@@ -43,7 +43,7 @@ const emit = defineEmits([activeFileExplorer]);
 
 .down-icon {
     position: absolute;
-    bottom: 0;
+    bottom: 50%;
     left: calc(50vw - 30px);
 
     width: 60px;

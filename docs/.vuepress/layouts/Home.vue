@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="home-wrapper">
         <FirstView @activeFileExplorer="active" />
         <FileExplorer :ref="el => FileExplorerRef = el" />
     </div>
@@ -11,7 +11,7 @@ import FirstView from '../components/FirstView.vue';
 // import { activeFileExplorer } from '../const'
 import { useRoute } from "vue-router";
 import { nextTick, ref } from 'vue'
-import { throttle , getScrollTop} from '../utils'
+import { throttle } from '../utils'
 
 const router = useRoute()
 const FileExplorerRef = ref()
@@ -41,4 +41,12 @@ window.addEventListener(
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.home-wrapper{
+    height: 200vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+</style>
