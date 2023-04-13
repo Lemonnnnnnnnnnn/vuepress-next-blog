@@ -9,7 +9,7 @@ console.log("生成完毕！")
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  base : '/vuepress-next-blog/',
+  base : '/',
   title: '𝓛𝓲𝓷𝔂𝓬的小站',
   description: '输出是最好的输入，记录每一刻',
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
