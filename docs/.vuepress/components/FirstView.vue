@@ -2,7 +2,7 @@
     <div v-if="showView" class="wrapper bg-pan-left bg-color" >
         <div class="content-wrapper flex-box tilt-in-fwd-tr">
             <div class="content">
-                <div class="avater"><img :src="asset_prefix + avatar" alt=""></div>
+                <div class="avater"><img :src=" avatar" alt=""></div>
                 <div class="name">{{ title }}</div>
                 <div class="describe">{{ description }}</div>
                 <div class="flex-box">
@@ -29,7 +29,6 @@ const { siteData, frontmatter } = defineProps<IProps>()
 const showView = ref(true)
 
 
-const asset_prefix = siteData.base
 const title = siteData.title
 const description = siteData.description
 const avatar = frontmatter.avatar;

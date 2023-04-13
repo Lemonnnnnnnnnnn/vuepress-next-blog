@@ -1,7 +1,7 @@
 <template>
   <div id="file-explorer" class="wrapper bgimg" :class="animationClass">
     <div v-if="viewIn" class="fileList">
-      <FileItem v-for="(item, index) in projects" :name="item.name" :icon="asset_prefix + item.icon" :key="index"
+      <FileItem v-for="(item, index) in projects" :name="item.name" :icon="item.icon" :key="index"
         :link="item.link" :onLeave="onLeave" />
     </div>
 
@@ -15,13 +15,11 @@ import { SiteData } from '@vuepress/client';
 
 
 interface IProps {
-  siteData: SiteData,
   frontmatter: any
 }
 
-const { siteData, frontmatter } = defineProps<IProps>()
+const { frontmatter } = defineProps<IProps>()
 
-const asset_prefix = siteData.base
 const projects = frontmatter.projects;
 
 const viewIn = ref<boolean | null>(null)

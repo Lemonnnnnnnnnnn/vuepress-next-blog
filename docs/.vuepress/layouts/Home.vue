@@ -1,18 +1,16 @@
 <template>
     <div class="home-wrapper">
         <FirstView :frontmatter="frontmatter" :siteData="siteData" @activeFileExplorer="active" />
-        <FileExplorer :frontmatter="frontmatter" :siteData="siteData" :ref="el => FileExplorerRef = el" />
+        <FileExplorer :frontmatter="frontmatter" :ref="el => FileExplorerRef = el" />
     </div>
 </template>
 
 <script setup lang="ts">
 import FileExplorer from '../components/FileExplorer.vue'
 import FirstView from '../components/FirstView.vue';
-// import { activeFileExplorer } from '../const'
 import { useSiteData, usePageFrontmatter } from "@vuepress/client";
 import { useRoute } from "vue-router";
 import { nextTick, ref } from 'vue'
-// import { throttle } from '../utils'
 
 const siteData = useSiteData()
 const frontmatter = usePageFrontmatter();
