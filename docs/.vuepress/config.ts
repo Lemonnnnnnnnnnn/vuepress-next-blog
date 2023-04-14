@@ -2,6 +2,7 @@ import { defineUserConfig, defaultTheme } from 'vuepress'
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { readingTimePlugin } from "vuepress-plugin-reading-time2";
 import { getSideBar } from './utils/getSideBar'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -25,17 +26,12 @@ export default defineUserConfig({
     readingTimePlugin({
       // your options
     }),
-    // smoothScrollPlugin(),
-    // smoothScrollPlugin({
-    //   delay: 1000
-    // }),
-    // lightgalleryPlugin({
-    //   // your options
-    // }),
-    // seoPlugin({
-    //   hostname: 'www.linyuchen.cloud'
-    // }),
+    docsearchPlugin({
+      // options
+      appId : 'BJPVBH8TUS',
+      apiKey : '239abfee81e599488fd25f5acf439ca3',
+      indexName : 'vuepress-next-vercel'
+    }),
   ],
-  // debug : true
 
 })
