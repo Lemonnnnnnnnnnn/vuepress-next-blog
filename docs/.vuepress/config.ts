@@ -4,20 +4,25 @@ import { readingTimePlugin } from "vuepress-plugin-reading-time2";
 import { getSideBar } from './utils/getSideBar'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 
+console.log("正在生成侧边栏...")
+const sidebar = getSideBar()
+console.log("生成完毕！")
+
 export default defineUserConfig({
   lang: 'zh-CN',
-  base : '/vuepress-next-blog/',
-  title: '你好， VuePress ！',
-  description: '这是我的第一个 VuePress 站点',
+  base : '/',
+  title: '𝓛𝓲𝓷𝔂𝓬的小站',
+  description: '输出是最好的输入，记录每一刻',
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   theme: defaultTheme({
     // 默认主题配置
     navbar: [
       {
         text: '首页',
-        link: '/',
+        link: '/#file-explorer',
       },
     ],
-    sidebar : getSideBar()
+    sidebar ,
   }),
   plugins: [
     copyCodePlugin({

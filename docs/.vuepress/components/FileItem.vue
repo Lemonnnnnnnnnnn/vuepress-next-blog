@@ -1,67 +1,76 @@
 <template>
-    <div class="dir scale-up-center" @click="()=>router.push(link)">
-        <div class= "content">
-            <img :src="icon" alt="">
-            <div class="dec tracking-in-expand">{{ name }}</div>
-        </div>
+  <div class="dir scale-up-center" @click="onClick">
+    <div class="content">
+      <img :src="icon" alt="">
+      <div class="dec tracking-in-expand">{{ name }}</div>
     </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { useRoute, useRouter } from "vue-router";
+import { useRouter } from "vue-router";
+
 const router = useRouter()
 
 interface IProps {
-    name: string
-    icon: string,
-    link: string,
+  name: string
+  icon: string,
+  link: string,
+  onLeave: () => void
 }
 
-const { name, icon, link } = defineProps<IProps>()
+const { name, icon, link, onLeave } = defineProps<IProps>()
+
+const onClick = () => {
+  onLeave()
+  setTimeout(() => {
+    router.push(link)
+  }, 700)
+}
 
 
 </script>
 
 <style  scoped>
 .dir {
-    width: 140px;
-    height: 140px;
-    padding: 10px;
-    display: flex;
-    margin : 30px;
-    align-items: center;
-    position: relative;
-    justify-content: center;
+  width: 140px;
+  height: 140px;
+  padding: 10px;
+  display: flex;
+  margin: 30px;
+  align-items: center;
+  position: relative;
+  justify-content: center;
 }
 
 
-.dir:hover{
-    background-color: rgb(157, 193, 216);
+.dir:hover {
+  background-color: rgb(157, 193, 216);
 }
 
-.content{
-   position: absolute; 
+.content {
+  position: absolute;
 }
 
 img {
-    width: 120px;
-    height: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 .dec {
-    user-select:none;
-    text-align: center;
-    font-size: 1.5rem;
+  user-select: none;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 
 
 .scale-up-center {
-	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.7s both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.7s both;
 }
 
 .tracking-in-expand {
-	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000)1s both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000)1s both;
 }
 
 /* ----------------------------------------------
@@ -76,10 +85,11 @@ img {
  * animation scale-up-center
  * ----------------------------------------
  */
- @keyframes scale-up-center {
+@keyframes scale-up-center {
   0% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(1);
   }
@@ -97,19 +107,18 @@ img {
  * animation tracking-in-expand
  * ----------------------------------------
  */
- @keyframes tracking-in-expand {
+@keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
     opacity: 0;
   }
+
   40% {
     opacity: 0.6;
   }
+
   100% {
     opacity: 1;
   }
 }
-
-
-
 </style>
