@@ -33,9 +33,9 @@ export default defineUserConfig({
     }),
     docsearchPlugin({
       // options
-      appId : 'BJPVBH8TUS',
-      apiKey : '239abfee81e599488fd25f5acf439ca3',
-      indexName : 'vuepress-next-vercel'
+      appId : 'YVXEGMS61I',
+      apiKey : '5137fc76e800b649fa2df2151513d3f6',
+      indexName : 'lincy-soul'
     }),
   ],
 
