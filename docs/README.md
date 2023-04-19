@@ -1,6 +1,9 @@
 ---
 layout: 'Home'
-avatar: 'dog_bg_256.png'
+avatar: '/dog_bg_256.png'
+mail: '1041707577@qq.com'
+github: 'https://github.com/Lemonnnnnnnnnnn'
+music: 'https://music.163.com/#/user/home?id=120350384'
 projects:
   - name: Vue
     link: /vue/

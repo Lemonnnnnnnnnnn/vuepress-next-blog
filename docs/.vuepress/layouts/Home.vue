@@ -8,13 +8,13 @@
 <script setup lang="ts">
 import FileExplorer from '../components/FileExplorer.vue'
 import FirstView from '../components/FirstView.vue';
-import { useSiteData, usePageFrontmatter } from "@vuepress/client";
-import { useRoute } from "vue-router";
+import { useSiteData, usePageFrontmatter  } from "@vuepress/client";
+import { useRoute  } from "vue-router";
 import { nextTick, ref } from 'vue'
 
 const siteData = useSiteData()
 const frontmatter = usePageFrontmatter();
-const router = useRoute()
+const route = useRoute()
 const FileExplorerRef = ref()
 
 const active = () => {
@@ -25,10 +25,10 @@ const active = () => {
     })
 }
 
-if (router.hash === '#file-explorer') {
+
+if (route.hash === '#file-explorer') {
     active()
 }
-
 
 </script>
 
