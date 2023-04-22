@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': ^7.21.4
   '@babel/node': ^7.20.7
+  '@moefy-canvas/theme-popper': ^0.5.2
   '@types/node': ^18.15.11
   '@vuepress/client': 2.0.0-beta.61
   '@vuepress/plugin-docsearch': 2.0.0-beta.61
@@ -19,6 +20,7 @@ specifiers:
 devDependencies:
   '@babel/core': registry.npmmirror.com/@babel/core/7.21.4
   '@babel/node': registry.npmmirror.com/@babel/node/7.20.7_@babel+core@7.21.4
+  '@moefy-canvas/theme-popper': registry.npmmirror.com/@moefy-canvas/theme-popper/0.5.2
   '@types/node': registry.npmmirror.com/@types/node/18.15.11
   '@vuepress/client': registry.npmmirror.com/@vuepress/client/2.0.0-beta.61
   '@vuepress/plugin-docsearch': registry.npmmirror.com/@vuepress/plugin-docsearch/2.0.0-beta.61
@@ -890,6 +892,30 @@ packages:
     resolution: {integrity: sha512-mrC4y8n88BYvgcgzq9bvTlDgFyi2zuvzmPilRvRc3Uz1iIvq8mDhxJ0rHKFUNzPEScpDvJdIujqiDrulMqiudA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@mdit-vue/types/-/types-0.12.0.tgz}
     name: '@mdit-vue/types'
     version: 0.12.0
+    dev: true
+
+  registry.npmmirror.com/@moefy-canvas/core/0.5.2:
+    resolution: {integrity: sha512-XkaVE91Tiwb35zFmI1DbrJpMh0xe54QbzQrc7ATwMos4C08dxBnwExwXEVS7oEct7owVDY1UWxtRRVE7smtzHw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@moefy-canvas/core/-/core-0.5.2.tgz}
+    name: '@moefy-canvas/core'
+    version: 0.5.2
+    dev: true
+
+  registry.npmmirror.com/@moefy-canvas/theme-popper/0.5.2:
+    resolution: {integrity: sha512-s6Gy27DKTLm2un5Od3fsAonnd7lN4pgyLXJ/omXisAZpVLbPg/Q5/QKpJLZvQ/08qNrn6X/GZjnWwvsHbJTBNw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@moefy-canvas/theme-popper/-/theme-popper-0.5.2.tgz}
+    name: '@moefy-canvas/theme-popper'
+    version: 0.5.2
+    dependencies:
+      '@moefy-canvas/core': registry.npmmirror.com/@moefy-canvas/core/0.5.2
+      '@moefy-canvas/utils': registry.npmmirror.com/@moefy-canvas/utils/0.5.2
+      ts-debounce: registry.npmmirror.com/ts-debounce/4.0.0
+    dev: true
+
+  registry.npmmirror.com/@moefy-canvas/utils/0.5.2:
+    resolution: {integrity: sha512-DnI8I/cTBFfn3xoXwyyLEtye4pMI6zJFMxU1qps731xgYTWmzBqJPkZZd/2gfNnH5NnLUOGG7Ui3sMkmJ0vg0w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@moefy-canvas/utils/-/utils-0.5.2.tgz}
+    name: '@moefy-canvas/utils'
+    version: 0.5.2
+    dependencies:
+      '@moefy-canvas/core': registry.npmmirror.com/@moefy-canvas/core/0.5.2
     dev: true
 
   registry.npmmirror.com/@nodelib/fs.scandir/2.1.5:
