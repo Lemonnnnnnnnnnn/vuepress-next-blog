@@ -50,7 +50,7 @@ defineExpose({ active })
 
 .fileList {
   display: flex;
-  padding: 20px;
+  margin: 20px;
   flex-wrap: wrap;
 }
 
