@@ -5,6 +5,11 @@
                 <div class="avater"><img :src=" avatar" alt=""></div>
                 <div class="name">{{ title }}</div>
                 <div class="describe">{{ description }}</div>
+                <div class="link">
+                    <a :href="github" target="_blank"><img src="/github.svg" alt=""></a>
+                    <a :href="mail" target="_blank"><img src="/mail.svg" alt=""></a>
+                    <a :href="music" target="_blank"><img src="/music.svg" alt=""></a>
+                </div>
                 <div class="flex-box">
                     <div @click="showMe" class="btn">让我康康！</div>
                 </div>
@@ -32,6 +37,9 @@ const showView = ref(true)
 const title = siteData.title
 const description = siteData.description
 const avatar = frontmatter.avatar;
+const music = frontmatter.music;
+const github = frontmatter.github;
+const mail = frontmatter.mail;
 
 const router = useRouter()
 const emit = defineEmits([activeFileExplorer]);
@@ -102,6 +110,21 @@ const showMe = () => {
         text-align: center;
         margin-top: 10px;
         font-style: italic;
+    }
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    a {
+        margin: 0 10px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 
