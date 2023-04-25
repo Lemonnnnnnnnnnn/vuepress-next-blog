@@ -34,8 +34,8 @@ export default defineUserConfig({
     docsearchPlugin({
       // options
       appId : 'YVXEGMS61I',
-      apiKey : '239abfee81e599488fd25f5acf439ca3',
-      indexName : 'vuepress-next-vercel'
+      apiKey : '5137fc76e800b649fa2df2151513d3f6',
+      indexName : 'lincy-soul'
     }),
   ],
 
