@@ -24,10 +24,7 @@ const { name, icon, link } = defineProps<IProps>()
 
 const onClick = () => {
   clicked.value = true
-
-  setTimeout(() => {
-    router.push(link)
-  }, 200)
+  router.push(link)
 }
 
 </script>
