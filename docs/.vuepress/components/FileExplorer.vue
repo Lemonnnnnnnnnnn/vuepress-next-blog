@@ -1,8 +1,7 @@
 <template>
   <div id="file-explorer" class="wrapper bgimg" :class="animationClass">
     <div v-if="viewIn" class="fileList">
-      <FileItem v-for="(item, index) in projects" :name="item.name" :icon="item.icon" :key="index"
-        :link="item.link" />
+      <FileItem v-for="(item, index) in projects" :name="item.name" :icon="item.icon" :key="index" :link="item.link" />
     </div>
 
   </div>
@@ -49,9 +48,9 @@ defineExpose({ active })
 }
 
 .fileList {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
   padding: 20px;
-  flex-wrap: wrap;
 }
 
 .fade-in {
@@ -91,7 +90,4 @@ defineExpose({ active })
     opacity: 1;
   }
 }
-
-
-
 </style>

@@ -31,8 +31,8 @@ const onClick = () => {
 
 <style  scoped>
 .dir {
-  width: 10%;
   height: 140px;
+  width: 140px;
   padding: 20px;
   display: flex;
   margin: 30px;
