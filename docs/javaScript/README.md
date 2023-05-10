@@ -1,16 +1,16 @@
 ## closure 
-[closure](closure/) 
+[closure](closure) 
 ## ES6 
-[ES6](ES6/) 
+[ES6](ES6) 
 ## JEST 
-[JEST](JEST/) 
+[JEST](JEST) 
 ## lodash 
-[lodash](lodash/) 
+[lodash](lodash) 
 ## nodejs 
-[nodejs](nodejs/) 
+[nodejs](nodejs) 
 ## observer 
-[observer](observer/) 
+[observer](observer) 
 ## README.md 
-[README.md](README.md/) 
+[README.md](README.md) 
 ## TypeScript 
-[TypeScript](TypeScript/) 
+[TypeScript](TypeScript) 
