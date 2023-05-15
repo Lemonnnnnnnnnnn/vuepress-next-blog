@@ -13,4 +13,4 @@
 ## README.md 
 [README.md](README.md) 
 ## TypeScript 
-[TypeScript](TypeScript) 
+[TypeScript](TypeScript/00.简介.html) 
