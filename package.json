@@ -26,5 +26,6 @@
     "vuepress-plugin-copy-code2": "2.0.0-beta.201",
     "vuepress-plugin-reading-time2": "2.0.0-beta.201",
     "vuepress-plugin-seo2": "2.0.0-beta.201"
-  }
+  },
+  "packageManager": "pnpm@8.3.1"
 }
