@@ -14,11 +14,11 @@ projects:
     icon: /react-js-icon.svg
 
   - name: Rust
-    link: /rust/10.基本使用.html/
+    link: /rust/10.基本使用.html
     icon: /rustacean-orig-noshadow.svg
 
   - name: Java
-    link: /java/10.起步.html/
+    link: /java/10.起步.html
     icon: /java-programming-language-icon.svg
 
   - name: JavaScript
@@ -26,7 +26,7 @@ projects:
     icon: /javascript-programming-language-icon.svg
 
   - name: Css
-    link: /css/
+    link: /css/10.media.html
     icon: /css-file-format-icon.svg
 
   - name: Python
@@ -46,15 +46,15 @@ projects:
     icon: /git-icon.svg
 
   - name: Webpack
-    link: /webpack/
+    link: /webpack/10.起步.html
     icon: /webpack-icon.svg
 
   - name: Cs
-    link: /cs/
+    link: /cs/10.零宽字符.html
     icon: /tech-icon.svg
 
   - name: Life
-    link: /life/
+    link: /life/01.租房知识笔记.html
     icon: /life.svg
 
 ---

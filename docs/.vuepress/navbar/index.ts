@@ -22,11 +22,11 @@ export const navbar: NavbarConfig = [
             },
             {
                 text: 'Webpack',
-                link: '/webpack/'
+                link: '/webpack/10.起步.html'
             },
             {
                 text: 'CSS',
-                link: '/css/'
+                link: '/css/10.media.html'
             },
         ]
     },
@@ -35,15 +35,15 @@ export const navbar: NavbarConfig = [
         children: [
             {
                 text: 'Java',
-                link: '/java/10.起步.html/'
+                link: '/java/10.起步.html'
             },
             {
                 text: 'Rust',
-                link: '/rust/10.基本使用.html/'
+                link: '/rust/10.基本使用.html'
             },
             {
                 text: 'Sql',
-                link: '/sql/'
+                link: '/sql/01.起步.html'
             },
             {
                 text: 'Server',
@@ -51,7 +51,7 @@ export const navbar: NavbarConfig = [
             },
             {
                 text: 'Python',
-                link: '/python/'
+                link: '/python/00.Vscode配置开发环境.html'
             },
         ]
     },
@@ -64,11 +64,11 @@ export const navbar: NavbarConfig = [
         children: [
             {
                 text: '杂谈',
-                link: '/life/'
+                link: '/life/01.租房知识笔记.html'
             },
             {
                 text: '计算机知识',
-                link: '/cs/'
+                link: '/cs/10.零宽字符.html'
             },
         ]
     }

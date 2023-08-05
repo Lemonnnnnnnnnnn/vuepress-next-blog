@@ -38,22 +38,22 @@ export function getSideBar() {
 
 // console.log(getSideBar())
 
-// export function generateSidebar() {
-//     const sideBar = getSideBar();
+export function generateSidebar() {
+    const sideBar = getSideBar();
 
-//     // 将sideBar 写入/docs/.vuepress/locale/sidebar.ts
-//     const sidebar_file = path.join(__dirname, '../locale/sidebar.ts');
-//     let sidebar_content = 'export default {\n';
-//     for (let key in sideBar) {
-//         sidebar_content += `    '${key}': [\n`;
-//         for (let file of sideBar[key]) {
-//             sidebar_content += `        '${file}',\n`;
-//         }
-//         sidebar_content += `    ],\n`;
-//     }
-//     sidebar_content += '}\n';
-//     fs.writeFileSync(sidebar_file, sidebar_content);
-// }
+    // 将sideBar 写入/docs/.vuepress/locale/sidebar.ts
+    const sidebar_file = path.join(__dirname, '../locale/sidebar.ts');
+    let sidebar_content = 'export default {\n';
+    for (let key in sideBar) {
+        sidebar_content += `    '${key}': [\n`;
+        for (let file of sideBar[key]) {
+            sidebar_content += `        '${file}',\n`;
+        }
+        sidebar_content += `    ],\n`;
+    }
+    sidebar_content += '}\n';
+    fs.writeFileSync(sidebar_file, sidebar_content);
+}
 
 // generateSidebar()
 
