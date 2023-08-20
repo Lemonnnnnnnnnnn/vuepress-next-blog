@@ -31,18 +31,16 @@ const onClick = () => {
 
 <style  scoped>
 .dir {
-  height: 140px;
-  width: 140px;
-  padding: 20px;
+  height: 240px;
+  width: 100%;
   display: flex;
-  margin: 30px;
   align-items: center;
   position: relative;
   justify-content: center;
 }
 
 .dir:hover {
-  background-color: rgba(198, 225, 241 , 0.5);
+  background-color: rgba(198, 225, 241, 0.5);
   transition: .6s;
   border-radius: 20px;
 }
@@ -62,16 +60,53 @@ img {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 700px) {
+  .dir {
+    height: 180px;
+  }
+  img {
+    height: 90px;
+    width: 90px;
+  }
+}
 
+@media screen and (max-width: 500px) {
+  .dir {
+    height: 160px;
+  }
 
-.scale-up-center {
-  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.7s both;
+  img {
+    height: 60px;
+    width: 60px;
+  }
+  .dec{
+    font-size: 1.3rem;
+    color: aliceblue;
+  }
 }
 
 
+@media screen and (max-width: 350px) {
+  .dir {
+    height: 120px;
+  }
+  img {
+    height: 40px;
+    width: 40px;
+  }
+  .dec{
+    font-size: 1rem;
+  }
+}
+
+
+.scale-up-center{
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.7s both;
+}
+
 .text-focus-in {
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530).4s both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530).4s both;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530).4s both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530).4s both;
 }
 
 /* ----------------------------------------------
@@ -89,24 +124,27 @@ img {
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
+
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
@@ -139,5 +177,4 @@ img {
     transform: scale(1);
   }
 }
-
 </style>

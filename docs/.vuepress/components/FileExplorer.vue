@@ -38,7 +38,7 @@ defineExpose({ active })
 
 <style scoped>
 .wrapper {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -51,6 +51,26 @@ defineExpose({ active })
   display: grid;
   grid-template-columns: repeat(5, 20%);
   padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+  .fileList {
+    grid-template-columns: repeat(4, 25%);
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fileList {
+    grid-template-columns: repeat(3, 33.3%);
+    padding: 12px;
+  }
+
+  .bgimg {
+    background-image: url('/mobile.jpg');
+    background-size: cover;
+  }
 }
 
 .fade-in {

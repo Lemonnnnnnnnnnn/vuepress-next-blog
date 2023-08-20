@@ -1,8 +1,8 @@
 <template>
-    <div v-if="showView" class="wrapper bg-pan-left bg-color" >
+    <div v-if="showView" class="wrapper bg-pan-left bg-color">
         <div class="content-wrapper flex-box tilt-in-fwd-tr">
             <div class="content">
-                <div class="avater"><img :src=" avatar" alt=""></div>
+                <div class="avater"><img :src="avatar" alt=""></div>
                 <div class="name">{{ title }}</div>
                 <div class="describe">{{ description }}</div>
                 <div class="link">
@@ -45,13 +45,13 @@ const router = useRouter()
 const emit = defineEmits([activeFileExplorer]);
 
 const showMe = () => {
+    localStorage.setItem("hasViewed", "1")
     router.push('#file-explorer')
     emit(activeFileExplorer)
     setTimeout(() => {
         showView.value = false
     }, 1000)
 }
-
 
 </script>
 
@@ -76,23 +76,21 @@ const showMe = () => {
     background-image: linear-gradient(270deg, #cc6aa5, #3e91cc, #2dcca7);
     background-size: 600% 100%;
 }
+
 .content-wrapper {
     height: 100%;
     width: 100%;
 }
 
 .content {
-    width: 300px;
-    height: 300px;
-
     .avater {
         display: flex;
         align-items: center;
         justify-content: center;
 
         img {
-            width: 60%;
-            height: 60%;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
         }
     }
@@ -113,7 +111,19 @@ const showMe = () => {
     }
 }
 
-.link{
+@media screen and (max-width: 500px) {
+    .content {
+        .avater {
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+
+}
+
+.link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,6 +131,7 @@ const showMe = () => {
 
     a {
         margin: 0 10px;
+
         img {
             width: 30px;
             height: 30px;
@@ -129,7 +140,7 @@ const showMe = () => {
 }
 
 .tilt-in-fwd-tr {
-	animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
 
 .bg-pan-left {
@@ -172,15 +183,16 @@ const showMe = () => {
  * animation tilt-in-fwd-tr
  * ----------------------------------------
  */
- @keyframes tilt-in-fwd-tr {
-  0% {
-    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
-    opacity: 1;
-  }
+@keyframes tilt-in-fwd-tr {
+    0% {
+        transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        opacity: 1;
+    }
 }
 
 
