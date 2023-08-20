@@ -40,6 +40,12 @@ defineExpose({ active })
 .wrapper {
   min-height: 100vh;
   width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+:global(::-webkit-scrollbar){
+  display: none;
 }
 
 .bgimg {
@@ -50,13 +56,15 @@ defineExpose({ active })
 .fileList {
   display: grid;
   grid-template-columns: repeat(5, 20%);
-  padding: 20px;
-  box-sizing: border-box;
 }
+
 
 @media screen and (max-width: 700px) {
   .fileList {
     grid-template-columns: repeat(4, 25%);
+  }
+
+  .wrapper {
     padding: 16px;
   }
 }
@@ -64,6 +72,9 @@ defineExpose({ active })
 @media screen and (max-width: 500px) {
   .fileList {
     grid-template-columns: repeat(3, 33.3%);
+  }
+
+  .wrapper {
     padding: 12px;
   }
 

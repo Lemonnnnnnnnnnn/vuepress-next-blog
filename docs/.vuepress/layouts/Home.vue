@@ -31,14 +31,11 @@ onMounted(() => {
     }
 })
 
-
-
 watch(() => route.hash, () => {
     if (route.hash === '#file-explorer') {
         active()
     }
 })
-
 
 </script>
 
@@ -51,7 +48,5 @@ watch(() => route.hash, () => {
     z-index: 1;
 }
 
-:root::-webkit-scrollbar {
-    display: none;
-}
+
 </style>
