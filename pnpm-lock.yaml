@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 devDependencies:
   '@babel/core':
     specifier: ^7.21.4
@@ -7,6 +11,9 @@ devDependencies:
   '@babel/node':
     specifier: ^7.20.7
     version: registry.npmmirror.com/@babel/node@7.20.7(@babel/core@7.21.4)
+  '@docsearch/js':
+    specifier: ^3.5.1
+    version: registry.npmmirror.com/@docsearch/js@3.5.1(@algolia/client-search@4.17.0)(search-insights@2.7.0)
   '@moefy-canvas/theme-popper':
     specifier: ^0.5.2
     version: registry.npmmirror.com/@moefy-canvas/theme-popper@0.5.2
@@ -18,7 +25,7 @@ devDependencies:
     version: registry.npmmirror.com/@vuepress/client@2.0.0-beta.61
   '@vuepress/plugin-docsearch':
     specifier: 2.0.0-beta.61
-    version: registry.npmmirror.com/@vuepress/plugin-docsearch@2.0.0-beta.61(@algolia/client-search@4.17.0)
+    version: registry.npmmirror.com/@vuepress/plugin-docsearch@2.0.0-beta.61(@algolia/client-search@4.17.0)(search-insights@2.7.0)
   ts-node:
     specifier: ^10.9.1
     version: registry.npmmirror.com/ts-node@10.9.1(@types/node@18.15.11)(typescript@5.0.4)
@@ -57,6 +64,35 @@ packages:
       '@algolia/autocomplete-shared': registry.npmmirror.com/@algolia/autocomplete-shared@1.7.4
     dev: true
 
+  registry.npmmirror.com/@algolia/autocomplete-core@1.9.3(@algolia/client-search@4.17.0)(algoliasearch@4.17.0)(search-insights@2.7.0):
+    resolution: {integrity: sha512-009HdfugtGCdC4JdXUbVJClA0q0zh24yyePn+KUGk3rP7j8FEe/m5Yo/z65gn6nP/cM39PxpzqKrL7A6fP6PPw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/autocomplete-core/-/autocomplete-core-1.9.3.tgz}
+    id: registry.npmmirror.com/@algolia/autocomplete-core/1.9.3
+    name: '@algolia/autocomplete-core'
+    version: 1.9.3
+    dependencies:
+      '@algolia/autocomplete-plugin-algolia-insights': registry.npmmirror.com/@algolia/autocomplete-plugin-algolia-insights@1.9.3(@algolia/client-search@4.17.0)(algoliasearch@4.17.0)(search-insights@2.7.0)
+      '@algolia/autocomplete-shared': registry.npmmirror.com/@algolia/autocomplete-shared@1.9.3(@algolia/client-search@4.17.0)(algoliasearch@4.17.0)
+    transitivePeerDependencies:
+      - '@algolia/client-search'
+      - algoliasearch
+      - search-insights
+    dev: true
+
+  registry.npmmirror.com/@algolia/autocomplete-plugin-algolia-insights@1.9.3(@algolia/client-search@4.17.0)(algoliasearch@4.17.0)(search-insights@2.7.0):
+    resolution: {integrity: sha512-a/yTUkcO/Vyy+JffmAnTWbr4/90cLzw+CC3bRbhnULr/EM0fGNvM13oQQ14f2moLMcVDyAx/leczLlAOovhSZg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/autocomplete-plugin-algolia-insights/-/autocomplete-plugin-algolia-insights-1.9.3.tgz}
+    id: registry.npmmirror.com/@algolia/autocomplete-plugin-algolia-insights/1.9.3
+    name: '@algolia/autocomplete-plugin-algolia-insights'
+    version: 1.9.3
+    peerDependencies:
+      search-insights: '>= 1 < 3'
+    dependencies:
+      '@algolia/autocomplete-shared': registry.npmmirror.com/@algolia/autocomplete-shared@1.9.3(@algolia/client-search@4.17.0)(algoliasearch@4.17.0)
+      search-insights: registry.npmmirror.com/search-insights@2.7.0
+    transitivePeerDependencies:
+      - '@algolia/client-search'
+      - algoliasearch
+    dev: true
+
   registry.npmmirror.com/@algolia/autocomplete-preset-algolia@1.7.4(@algolia/client-search@4.17.0)(algoliasearch@4.17.0):
     resolution: {integrity: sha512-s37hrvLEIfcmKY8VU9LsAXgm2yfmkdHT3DnA3SgHaY93yjZ2qL57wzb5QweVkYuEBZkT2PIREvRoLXC2sxTbpQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.7.4.tgz}
     id: registry.npmmirror.com/@algolia/autocomplete-preset-algolia/1.7.4
@@ -71,10 +107,37 @@ packages:
       algoliasearch: registry.npmmirror.com/algoliasearch@4.17.0
     dev: true
 
+  registry.npmmirror.com/@algolia/autocomplete-preset-algolia@1.9.3(@algolia/client-search@4.17.0)(algoliasearch@4.17.0):
+    resolution: {integrity: sha512-d4qlt6YmrLMYy95n5TB52wtNDr6EgAIPH81dvvvW8UmuWRgxEtY0NJiPwl/h95JtG2vmRM804M0DSwMCNZlzRA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/autocomplete-preset-algolia/-/autocomplete-preset-algolia-1.9.3.tgz}
+    id: registry.npmmirror.com/@algolia/autocomplete-preset-algolia/1.9.3
+    name: '@algolia/autocomplete-preset-algolia'
+    version: 1.9.3
+    peerDependencies:
+      '@algolia/client-search': '>= 4.9.1 < 6'
+      algoliasearch: '>= 4.9.1 < 6'
+    dependencies:
+      '@algolia/autocomplete-shared': registry.npmmirror.com/@algolia/autocomplete-shared@1.9.3(@algolia/client-search@4.17.0)(algoliasearch@4.17.0)
+      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search@4.17.0
+      algoliasearch: registry.npmmirror.com/algoliasearch@4.17.0
+    dev: true
+
   registry.npmmirror.com/@algolia/autocomplete-shared@1.7.4:
     resolution: {integrity: sha512-2VGCk7I9tA9Ge73Km99+Qg87w0wzW4tgUruvWAn/gfey1ZXgmxZtyIRBebk35R1O8TbK77wujVtCnpsGpRy1kg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.7.4.tgz}
     name: '@algolia/autocomplete-shared'
     version: 1.7.4
+    dev: true
+
+  registry.npmmirror.com/@algolia/autocomplete-shared@1.9.3(@algolia/client-search@4.17.0)(algoliasearch@4.17.0):
+    resolution: {integrity: sha512-Wnm9E4Ye6Rl6sTTqjoymD+l8DjSTHsHboVRYrKgEt8Q7UHm9nYbqhN/i0fhUYA3OAEH7WA8x3jfpnmJm3rKvaQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.9.3.tgz}
+    id: registry.npmmirror.com/@algolia/autocomplete-shared/1.9.3
+    name: '@algolia/autocomplete-shared'
+    version: 1.9.3
+    peerDependencies:
+      '@algolia/client-search': '>= 4.9.1 < 6'
+      algoliasearch: '>= 4.9.1 < 6'
+    dependencies:
+      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search@4.17.0
+      algoliasearch: registry.npmmirror.com/algoliasearch@4.17.0
     dev: true
 
   registry.npmmirror.com/@algolia/cache-browser-local-storage@4.17.0:
@@ -494,19 +557,26 @@ packages:
     version: 3.3.3
     dev: true
 
-  registry.npmmirror.com/@docsearch/js@3.3.3(@algolia/client-search@4.17.0):
-    resolution: {integrity: sha512-2xAv2GFuHzzmG0SSZgf8wHX0qZX8n9Y1ZirKUk5Wrdc+vH9CL837x2hZIUdwcPZI9caBA+/CzxsS68O4waYjUQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@docsearch/js/-/js-3.3.3.tgz}
-    id: registry.npmmirror.com/@docsearch/js/3.3.3
+  registry.npmmirror.com/@docsearch/css@3.5.1:
+    resolution: {integrity: sha512-2Pu9HDg/uP/IT10rbQ+4OrTQuxIWdKVUEdcw9/w7kZJv9NeHS6skJx1xuRiFyoGKwAzcHXnLp7csE99sj+O1YA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@docsearch/css/-/css-3.5.1.tgz}
+    name: '@docsearch/css'
+    version: 3.5.1
+    dev: true
+
+  registry.npmmirror.com/@docsearch/js@3.5.1(@algolia/client-search@4.17.0)(search-insights@2.7.0):
+    resolution: {integrity: sha512-EXi8de5njxgP6TV3N9ytnGRLG9zmBNTEZjR4VzwPcpPLbZxxTLG2gaFyJyKiFVQxHW/DPlMrDJA3qoRRGEkgZw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@docsearch/js/-/js-3.5.1.tgz}
+    id: registry.npmmirror.com/@docsearch/js/3.5.1
     name: '@docsearch/js'
-    version: 3.3.3
+    version: 3.5.1
     dependencies:
-      '@docsearch/react': registry.npmmirror.com/@docsearch/react@3.3.3(@algolia/client-search@4.17.0)
+      '@docsearch/react': registry.npmmirror.com/@docsearch/react@3.5.1(@algolia/client-search@4.17.0)(search-insights@2.7.0)
       preact: registry.npmmirror.com/preact@10.13.2
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/react'
       - react
       - react-dom
+      - search-insights
     dev: true
 
   registry.npmmirror.com/@docsearch/react@3.3.3(@algolia/client-search@4.17.0):
@@ -532,6 +602,32 @@ packages:
       algoliasearch: registry.npmmirror.com/algoliasearch@4.17.0
     transitivePeerDependencies:
       - '@algolia/client-search'
+    dev: true
+
+  registry.npmmirror.com/@docsearch/react@3.5.1(@algolia/client-search@4.17.0)(search-insights@2.7.0):
+    resolution: {integrity: sha512-t5mEODdLzZq4PTFAm/dvqcvZFdPDMdfPE5rJS5SC8OUq9mPzxEy6b+9THIqNM9P0ocCb4UC5jqBrxKclnuIbzQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@docsearch/react/-/react-3.5.1.tgz}
+    id: registry.npmmirror.com/@docsearch/react/3.5.1
+    name: '@docsearch/react'
+    version: 3.5.1
+    peerDependencies:
+      '@types/react': '>= 16.8.0 < 19.0.0'
+      react: '>= 16.8.0 < 19.0.0'
+      react-dom: '>= 16.8.0 < 19.0.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      '@algolia/autocomplete-core': registry.npmmirror.com/@algolia/autocomplete-core@1.9.3(@algolia/client-search@4.17.0)(algoliasearch@4.17.0)(search-insights@2.7.0)
+      '@algolia/autocomplete-preset-algolia': registry.npmmirror.com/@algolia/autocomplete-preset-algolia@1.9.3(@algolia/client-search@4.17.0)(algoliasearch@4.17.0)
+      '@docsearch/css': registry.npmmirror.com/@docsearch/css@3.5.1
+      algoliasearch: registry.npmmirror.com/algoliasearch@4.17.0
+    transitivePeerDependencies:
+      - '@algolia/client-search'
+      - search-insights
     dev: true
 
   registry.npmmirror.com/@esbuild/android-arm64@0.16.17:
@@ -1329,14 +1425,14 @@ packages:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/@vuepress/plugin-docsearch@2.0.0-beta.61(@algolia/client-search@4.17.0):
+  registry.npmmirror.com/@vuepress/plugin-docsearch@2.0.0-beta.61(@algolia/client-search@4.17.0)(search-insights@2.7.0):
     resolution: {integrity: sha512-/C4A9DIxeLxll1UXgTeOoQqQnA5sBfb5Inek3Lzr4p6yxjeRhFigMctjJzHFAj0JHDEmO1BYVbqh4FxmtZjeVg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vuepress/plugin-docsearch/-/plugin-docsearch-2.0.0-beta.61.tgz}
     id: registry.npmmirror.com/@vuepress/plugin-docsearch/2.0.0-beta.61
     name: '@vuepress/plugin-docsearch'
     version: 2.0.0-beta.61
     dependencies:
       '@docsearch/css': registry.npmmirror.com/@docsearch/css@3.3.3
-      '@docsearch/js': registry.npmmirror.com/@docsearch/js@3.3.3(@algolia/client-search@4.17.0)
+      '@docsearch/js': registry.npmmirror.com/@docsearch/js@3.5.1(@algolia/client-search@4.17.0)(search-insights@2.7.0)
       '@docsearch/react': registry.npmmirror.com/@docsearch/react@3.3.3(@algolia/client-search@4.17.0)
       '@vuepress/client': registry.npmmirror.com/@vuepress/client@2.0.0-beta.61
       '@vuepress/core': registry.npmmirror.com/@vuepress/core@2.0.0-beta.61
@@ -1352,6 +1448,7 @@ packages:
       - '@vue/composition-api'
       - react
       - react-dom
+      - search-insights
       - supports-color
     dev: true
 
@@ -3397,6 +3494,13 @@ packages:
       chokidar: registry.npmmirror.com/chokidar@3.5.3
       immutable: registry.npmmirror.com/immutable@4.3.0
       source-map-js: registry.npmmirror.com/source-map-js@1.0.2
+    dev: true
+
+  registry.npmmirror.com/search-insights@2.7.0:
+    resolution: {integrity: sha512-GLbVaGgzYEKMvuJbHRhLi1qoBFnjXZGZ6l4LxOYPCp4lI2jDRB3jPU9/XNhMwv6kvnA9slTreq6pvK+b3o3aqg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/search-insights/-/search-insights-2.7.0.tgz}
+    name: search-insights
+    version: 2.7.0
+    engines: {node: '>=8.16.0'}
     dev: true
 
   registry.npmmirror.com/section-matter@1.0.0:

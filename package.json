@@ -13,6 +13,7 @@
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/node": "^7.20.7",
+    "@docsearch/js": "^3.5.1",
     "@moefy-canvas/theme-popper": "^0.5.2",
     "@types/node": "^18.15.11",
     "@vuepress/client": "2.0.0-beta.61",

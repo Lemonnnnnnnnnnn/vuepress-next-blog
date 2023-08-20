@@ -2,6 +2,7 @@ export default {
     '/': [
         'README.md',
         'crawl-only.md',
+        'searcher.md',
     ],
     '/cs/': [
         '10.零宽字符.md',
