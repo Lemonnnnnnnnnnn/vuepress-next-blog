@@ -1,7 +1,7 @@
 import { defineUserConfig, defaultTheme } from 'vuepress'
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { readingTimePlugin } from "vuepress-plugin-reading-time2";
-import { getSideBar , generateSidebar } from './utils/getSideBar'
+import { getSideBar, generateSidebar } from './utils/getSideBar'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { navbar } from './navbar'
 
@@ -18,7 +18,9 @@ export default defineUserConfig({
   theme: defaultTheme({
     // 默认主题配置
     navbar,
-    sidebar : (await import('./locale/sidebar')).default,
+    sidebar: (await import('./locale/sidebar')).default,
+    colorMode: 'light',
+    colorModeSwitch: false
   }),
   plugins: [
     copyCodePlugin({
