@@ -1,7 +1,7 @@
 export default {
     '/': [
-        'README.md',
         'crawl-only.md',
+        'README.md',
         'searcher.md',
     ],
     '/cs/': [
@@ -49,6 +49,10 @@ export default {
         '480.Spring-Security.md',
         '600.一些名词.md',
     ],
+    '/javaScript/closure/': [
+        '01.闭包与观察者模式.md',
+        'README.md',
+    ],
     '/javaScript/ES6/': [
         '01.箭头函数.md',
         '02.Proxy.md',
@@ -63,22 +67,6 @@ export default {
         '03.匹配器.md',
         '05.生命周期.md',
         '10.异步测试.md',
-        'README.md',
-    ],
-    '/javaScript/': [
-        'README.md',
-    ],
-    '/javaScript/TypeScript/': [
-        '00.简介.md',
-        '10.泛型、函数、类与接口.md',
-        '20.条件类型.md',
-        '30.keyof、typeof与enum.md',
-        '40.in与工具类型.md',
-        '50.infer.md',
-        'README.md',
-    ],
-    '/javaScript/closure/': [
-        '01.闭包与观察者模式.md',
         'README.md',
     ],
     '/javaScript/lodash/': [
@@ -99,6 +87,18 @@ export default {
     '/javaScript/observer/': [
         '01.简介.md',
         '02.将观察者模式用于页面渲染.md',
+        'README.md',
+    ],
+    '/javaScript/': [
+        'README.md',
+    ],
+    '/javaScript/TypeScript/': [
+        '00.简介.md',
+        '10.泛型、函数、类与接口.md',
+        '20.条件类型.md',
+        '30.keyof、typeof与enum.md',
+        '40.in与工具类型.md',
+        '50.infer.md',
         'README.md',
     ],
     '/life/': [
@@ -129,7 +129,30 @@ export default {
         '10.同步项目依赖.md',
         'README.md',
     ],
+    '/react/react16-react18/': [
+        '10.懒加载.md',
+        '20.Transition.md',
+        '30.useReducer.md',
+        '40.HOC.md',
+        '50.ref.md',
+        '60.suspense.md',
+        '70.ErrorBoundary.md',
+        '80.自定义hooks.md',
+        '90.rule of hooks.md',
+        '100.优化相关.md',
+        '110.一些常见的小问题.md',
+        '120.你真的将useEffect用对地方了吗.md',
+        '130.副作用与useEffect.md',
+        'README.md',
+    ],
     '/react/': [
+        'README.md',
+    ],
+    '/react/recoil/': [
+        '01.入门.md',
+        '02.Selector详解.md',
+        '03.数据预取.md',
+        '04.snapshot快照.md',
         'README.md',
     ],
     '/react/Redux/': [
@@ -151,29 +174,6 @@ export default {
         '04.无限加载列表.md',
         '05.配置和条件渲染.md',
         '08.传入参数.md',
-        'README.md',
-    ],
-    '/react/react16-react18/': [
-        '10.懒加载.md',
-        '20.Transition.md',
-        '30.useReducer.md',
-        '40.HOC.md',
-        '50.ref.md',
-        '60.suspense.md',
-        '70.ErrorBoundary.md',
-        '80.自定义hooks.md',
-        '90.rule of hooks.md',
-        '100.优化相关.md',
-        '110.一些常见的小问题.md',
-        '120.你真的将useEffect用对地方了吗.md',
-        '130.副作用与useEffect.md',
-        'README.md',
-    ],
-    '/react/recoil/': [
-        '01.入门.md',
-        '02.Selector详解.md',
-        '03.数据预取.md',
-        '04.snapshot快照.md',
         'README.md',
     ],
     '/rust/': [
@@ -228,11 +228,11 @@ export default {
     '/tools/': [
         'AHK.md',
         'Chrome.md',
+        'ffmpeg.md',
         'Intellij-Idea.md',
         'Listary.md',
-        'README.md',
-        'ffmpeg.md',
         'notion.md',
+        'README.md',
         'vscode.md',
     ],
     '/tools/docker/': [
@@ -247,8 +247,27 @@ export default {
         '03.gitHub-Cli.md',
         'README.md',
     ],
+    '/vue/base/': [
+        '10.data.md',
+        '20.响应式原理.md',
+        '30.渲染函数与h.md',
+        '40.emit.md',
+        '50.attribute继承.md',
+        '60.ref.md',
+        '70.computed.md',
+        '80.slot.md',
+        'README.md',
+    ],
     '/vue/Nuxt/': [
         '01.Nuxt3创建项目.md',
+        'README.md',
+    ],
+    '/vue/pinia/': [
+        '01.简介.md',
+        '02.Store.md',
+        '03.getter.md',
+        '04.subscribe.md',
+        '05.插件.md',
         'README.md',
     ],
     '/vue/': [
@@ -268,25 +287,6 @@ export default {
         '70.v-model.md',
         '80.style特性.md',
         '100.teleport.md',
-        'README.md',
-    ],
-    '/vue/base/': [
-        '10.data.md',
-        '20.响应式原理.md',
-        '30.渲染函数与h.md',
-        '40.emit.md',
-        '50.attribute继承.md',
-        '60.ref.md',
-        '70.computed.md',
-        '80.slot.md',
-        'README.md',
-    ],
-    '/vue/pinia/': [
-        '01.简介.md',
-        '02.Store.md',
-        '03.getter.md',
-        '04.subscribe.md',
-        '05.插件.md',
         'README.md',
     ],
     '/vue/vuex/': [

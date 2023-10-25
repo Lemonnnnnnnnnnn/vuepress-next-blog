@@ -16,7 +16,6 @@
             </div>
         </div>
     </div>
-    <!-- <img @click="showMe" src="/down.svg" class="down-icon" alt=""> -->
 </template>
 
 <script setup lang="ts">

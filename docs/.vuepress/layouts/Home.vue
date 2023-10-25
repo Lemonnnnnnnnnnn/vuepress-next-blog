@@ -1,6 +1,6 @@
 <template>
     <div class="home-wrapper">
-        <FirstView :frontmatter="frontmatter" :siteData="siteData" @activeFileExplorer="active" />
+        <FirstView v-show="showFirstView" :frontmatter="frontmatter" :siteData="siteData" @activeFileExplorer="active" />
         <FileExplorer :frontmatter="frontmatter" :ref="el => FileExplorerRef = el" />
     </div>
 </template>
@@ -16,6 +16,7 @@ const siteData = useSiteData()
 const frontmatter = usePageFrontmatter();
 const route = useRoute()
 const FileExplorerRef = ref()
+const showFirstView = ref(true)
 
 const active = () => {
     nextTick(() => {
@@ -27,6 +28,7 @@ const active = () => {
 
 onMounted(() => {
     if (localStorage.getItem("hasViewed") === '1') {
+        showFirstView.value = false
         active()
     }
 })
