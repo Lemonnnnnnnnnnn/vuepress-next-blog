@@ -195,6 +195,8 @@ export default {
         '125.工厂模式、Box与dyn.md',
         '130.Thread.md',
         '150.宏.md',
+        '160.异步编程-初识.md',
+        '170.异步编程-所有权.md',
     ],
     '/server/01.linux/': [
         '10.基本使用.md',
@@ -202,6 +204,7 @@ export default {
         '30.常用配置.md',
         '40.常用插件.md',
         '50.bash脚本.md',
+        '60.find.md',
         '100.ssh.md',
         '110.clash.md',
         '200.如何用shell脚本签出固定的git分支？.md',
@@ -237,6 +240,7 @@ export default {
     ],
     '/tools/docker/': [
         '10.常用命令.md',
+        '20.开发实用小技巧-如何在本地模拟nginx二级目录.md',
         '50.mysql.md',
         '100.ocrmypdf.md',
         'README.md',
