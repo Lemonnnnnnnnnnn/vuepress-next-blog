@@ -6,13 +6,13 @@ title: 为什么选用Astro
 
 #### SEO 搜索引擎优化
 
-`React, Vue` 等 **SPA** (单页应用 `Single Page Application`) 常将页面及其所有资源打包成一个或多个 js 文件，通过动态引入 js 文件生成渲染视图。而网络爬虫一般在下载完 html 文件后即开始爬取内容，因为此时 js 资源还没有被动态引入，因此爬虫无法爬取到网页内容，导致网站内容无法被基于爬虫的搜索引擎很好的收录。
+`React, Vue` 等 **SPA** (单页应用 `Single Page Application`) 常将页面及其所有资源打包成一个或多个 js 文件，通过动态引入 js 文件生成渲染视图。而网络爬虫一般在下载完 html 文件后即开始爬取内容，因为**此时 js 资源还没有被动态引入，因此爬虫无法爬取到网页内容**，导致网站内容无法被基于爬虫的搜索引擎很好的收录。
 
-`Astro` 是一个 **MPA** (多页应用 `Multiple Page Application`) 框架，他能够在编译时根据路由生成多个 html 文件，无需动态加载多余的 js 资源辅助页面渲染，SEO效果良好。
+`Astro` 是一个 **MPA** (多页应用 `Multiple Page Application`) 框架，他能够在编译时根据路由生成**多个 html 文件**，无需动态加载多余的 js 资源辅助页面渲染，SEO效果良好。
 
 #### 开发便捷
 
-Astro 不但有自己原生的模板语法，同时他也支持多种 UI 框架，包括 React, Preact, Svelte, Vue, Solid, Lit 等等。学习曲线平滑，可以轻松从其他开发框架过渡到 Astro 开发。
+Astro 不但有自己原生的模板语法，同时他也支持多种 UI 框架，包括 `React, Preact, Svelte, Vue, Solid, Lit` 等等。学习曲线平滑，**可以轻松从其他开发框架过渡到 Astro 开发**。
 
 并且有翻译质量优秀的中文文档：[https://docs.astro.build/zh-cn/getting-started/](https://docs.astro.build/zh-cn/getting-started/) 。
 
@@ -24,9 +24,9 @@ Astro 不但有自己原生的模板语法，同时他也支持多种 UI 框架�
 
 ![](https://i2.100024.xyz/2023/11/13/shc7xp.webp)
 
-Astro 群岛（又称组件群岛）是 Astro 开创的一种新 Web 架构模式。可交互的岛屿会通过动态加载 js 生成，他不会阻塞首屏的加载，这使 Astro 的性能相当优秀。
+**Astro 群岛**（又称组件群岛）是 Astro 开创的一种新 Web 架构模式。可交互的岛屿会通过动态加载 js 生成，他不会阻塞首屏的加载，这使 Astro 的**性能相当优秀**。
 
-PS：关于性能，在 `astro` 官方的一篇[报告](https://astro.build/blog/2023-web-framework-performance-report/)中有详细的多框架测试结果对比，在 【谷歌核心网络指标】、【首次输入延迟】、【累计布局移位】、【最大内容绘制】等指标中，Astro 均拥有着极好的表现。下表是谷歌核心网络指标的统计图：
+**PS：**关于性能，在 `astro` 官方的一篇[报告](https://astro.build/blog/2023-web-framework-performance-report/)中有详细的多框架测试结果对比，在 【谷歌核心网络指标】、【首次输入延迟】、【累计布局移位】、【最大内容绘制】等指标中，Astro 均拥有着极好的表现。下表是谷歌核心网络指标的统计图：
 
 ![](https://i2.100024.xyz/2023/11/13/u64mfe.webp)
 
