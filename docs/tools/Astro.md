@@ -60,7 +60,7 @@ Astro 提供了自动生成 sitemap 的插件。
 
 然后运行 `pnpm build` 命令，会自动将生成的所有 html 文件以 `site/路径` 的形式生成 `sitemap-0.xml` 与 `sitemap-index` 文件.
 
-验证网站地图已经生成后，你可以将它们添加到网站的 <head> 和爬虫读取的 robots.txt 文件中。
+验证网站地图已经生成后，你可以将它们添加到网站的 `<head>` 和爬虫读取的 robots.txt 文件中。
 
 ```html
 <!-- src/layouts/Layout.astro -->

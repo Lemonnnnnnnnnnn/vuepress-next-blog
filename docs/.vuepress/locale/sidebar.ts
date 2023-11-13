@@ -230,6 +230,7 @@ export default {
     ],
     '/tools/': [
         'AHK.md',
+        'Astro.md',
         'Chrome.md',
         'ffmpeg.md',
         'Intellij-Idea.md',
