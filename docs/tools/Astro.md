@@ -14,7 +14,7 @@ title: 为什么选用Astro
 
 Astro 不但有自己原生的模板语法，同时他也支持多种 UI 框架，包括 React, Preact, Svelte, Vue, Solid, Lit 等等。学习曲线平滑，可以轻松从其他开发框架过渡到 Astro 开发。
 
-并且有翻译质量优秀的中文文档：![https://docs.astro.build/zh-cn/getting-started/](https://docs.astro.build/zh-cn/getting-started/) 。
+并且有翻译质量优秀的中文文档：[https://docs.astro.build/zh-cn/getting-started/](https://docs.astro.build/zh-cn/getting-started/) 。
 
 #### 交互良好、性能优秀
 
@@ -77,8 +77,8 @@ Allow: /
 Sitemap: https://<YOUR SITE>/sitemap-index.xml
 ```
 
-更多使用参考：https://docs.astro.build/zh-cn/guides/integrations-guide/sitemap/#%E4%BD%BF%E7%94%A8
-
+更多使用参考：[https://docs.astro.build/zh-cn/guides/integrations-guide/sitemap/#%E4%BD%BF%E7%94%A8](https://docs.astro.build/zh-cn/guides/integrations-guide/sitemap/#%E4%BD%BF%E7%94%A8
+)
 
 
 
