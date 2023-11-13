@@ -80,5 +80,10 @@ Sitemap: https://<YOUR SITE>/sitemap-index.xml
 更多使用参考：[https://docs.astro.build/zh-cn/guides/integrations-guide/sitemap/#%E4%BD%BF%E7%94%A8](https://docs.astro.build/zh-cn/guides/integrations-guide/sitemap/#%E4%BD%BF%E7%94%A8
 )
 
+## 关于其他方案
+
+如果有远程获取数据的需求，又想要做SEO，选用**服务端渲染（SSR）**是一个可行的方案，在服务端请求远程数据，拿到数据后写入 html 模板，再将生成好数据的 html 返回到前端应用。成熟的框架有 `Next.js , Nuxt.js , Qwik` 等等。
+
+**缺点：**SSR项目需要服务器部署服务，运维成本高。
 
 
