@@ -230,7 +230,6 @@ export default {
     ],
     '/tools/': [
         'AHK.md',
-        'Astro.md',
         'Chrome.md',
         'ffmpeg.md',
         'Intellij-Idea.md',
@@ -312,6 +311,11 @@ export default {
         '40.Asset Modules.md',
         '50.resolve.md',
         '60.module-federation.md',
+        'README.md',
+    ],
+    '/work/': [
+        'Astro.md',
+        'Astro深入调研.md',
         'README.md',
     ],
 }
