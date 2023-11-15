@@ -30,9 +30,6 @@ title: Astro深入调研
 - `TailwindCss` 提供的的 class 类名众多，需要一定的记忆技巧，存在学习成本（但学习成本不高，类名几乎为 css 代码的缩写组合，如 `margin-left: 18px` -> `ml-[18px]`）。 
 - 因为一个元素上可能挂载大量的 class 类名，可能看起来不美观。
 
-
-详情可以参考： [https://juejin.cn/post/6968034561791885319](https://juejin.cn/post/6968034561791885319)
-
 ## 是否引入 CSS 预处理器，如：Sass、Less
 
 理论上来说，**CSS库和CSS预处理器择一即可**，CSS预处理器加快了编写原生CSS代码的效率。但引入了 CSS 库，编写原生 CSS 代码的场景大大降低了。
