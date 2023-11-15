@@ -30,13 +30,6 @@ title: Astro深入调研
 - `TailwindCss` 提供的的 class 类名众多，需要一定的记忆技巧，存在学习成本（但学习成本不高，类名几乎为 css 代码的缩写组合，如 `margin-left: 18px` -> `ml-[18px]`）。 
 - 因为一个元素上可能挂载大量的 class 类名，可能看起来不美观。
 
-**其他CSS库**:
-
-`styled-components` 是一个成熟的 `CSS in Js` 框架，其拥有一些独有的优点：
-
-- 没有想样式名的烦恼
-- 很容易找到组件对应的样式代码
-- 不会有没用到的样式代码
 
 详情可以参考： [https://juejin.cn/post/6968034561791885319](https://juejin.cn/post/6968034561791885319)
 
