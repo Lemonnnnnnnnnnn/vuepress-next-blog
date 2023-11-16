@@ -317,5 +317,6 @@ export default {
         'Astro.md',
         'Astro深入调研.md',
         'README.md',
+        '基于turborepo的物理缓存方案.md',
     ],
 }

@@ -1,5 +1,5 @@
 ---
-title: "基于turborepo的物理缓存方案"
+title: 基于turborepo的物理缓存方案
 ---
 
 提高打包/编译速度有两个主要的思考方向：
@@ -53,7 +53,7 @@ title: "基于turborepo的物理缓存方案"
 
 #### turborepo赋能
 
-一、turborepo 采用我们[前面提到的缓存策略](#一、当你不明确哪些依赖会让项目物理缓存失效时，很容易产生构建缓存不失效，导致产物是旧的问题，极大影响研发效率。)来判断是否命中缓存。并可以自由配置缓存策略，比如指定参与生成哈希值的文件集（input,output）：
+一、turborepo 采用我们[前面提到的缓存策略](#物理缓存的痛点)来判断是否命中缓存。并可以自由配置缓存策略，比如指定参与生成哈希值的文件集（input,output）：
 
 ```json
     "build": {
@@ -95,3 +95,4 @@ title: "基于turborepo的物理缓存方案"
 ## 基于 turborepo 改造的 umi + antd 多仓库示例
 
 [https://github.com/Lemonnnnnnnnnnn/workspace-demo/tree/master/examples/umi-antd](https://github.com/Lemonnnnnnnnnnn/workspace-demo/tree/master/examples/umi-antd)
+

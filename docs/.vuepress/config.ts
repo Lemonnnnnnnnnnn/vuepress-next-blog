@@ -19,8 +19,6 @@ export default defineUserConfig({
     // 默认主题配置
     navbar,
     sidebar: (await import('./locale/sidebar')).default,
-    colorMode: 'light',
-    colorModeSwitch: false
   }),
   plugins: [
     copyCodePlugin({
