@@ -49,7 +49,7 @@ defineExpose({ active })
 }
 
 .bgimg {
-  background-image: url('/w11-h-60.jpg');
+  background-image: linear-gradient(270deg, #cc6aa5, #3e91cc, #2dcca7);
   background-size: cover;
 }
 
@@ -79,7 +79,7 @@ defineExpose({ active })
   }
 
   .bgimg {
-    background-image: url('/mobile.jpg');
+    background-image: linear-gradient(270deg, #cc6aa5, #3e91cc, #2dcca7);
     background-size: cover;
   }
 }

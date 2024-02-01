@@ -240,10 +240,15 @@ export default {
     ],
     '/tools/docker/': [
         '10.常用命令.md',
-        '20.开发实用小技巧-如何在本地模拟nginx二级目录.md',
+        '20.前端开发实用小技巧-如何利用docker在本地模拟nginx多级目录.md',
         '50.mysql.md',
         '100.ocrmypdf.md',
         'README.md',
+    ],
+    '/tools/docker/attachments/': [
+        '404.png',
+        'asset.png',
+        'preact.png',
     ],
     '/tools/git/': [
         '01.常用指令.md',

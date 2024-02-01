@@ -71,7 +71,6 @@ const showMe = () => {
 }
 
 .bg-color {
-    // background: linear-gradient(to right, #29EAC4, #4284DB);
     background-image: linear-gradient(270deg, #cc6aa5, #3e91cc, #2dcca7);
     background-size: 600% 100%;
 }
